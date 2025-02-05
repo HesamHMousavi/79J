@@ -1,0 +1,102 @@
+
+/* Contact Form Container */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-color-1);
+    text-transform: uppercase;
+    font-weight: 400 ;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gold-bg);
+    font-size: 16px;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    color: #333;
+    transition: border 0.3s ease-in-out;
+    font-weight: 300;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--gold-bg);
+    color: #222;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: var(--gold-bg);
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #a8925f;
+}
+.text-area{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+}
+
+/* 🌍 Responsive Design */
+
+/* Tablets (Below 768px) */
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 90%;
+        /* margin: 0; */
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+}
+
+/* Mobile (Below 480px) */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

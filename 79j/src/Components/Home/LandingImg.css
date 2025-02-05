@@ -1,0 +1,49 @@
+.landing-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 135px;
+  overflow: hidden;
+}
+
+.landing-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)); 
+  z-index: 1; /* Ensures overlay is above the image */
+}
+
+.landing-image img {
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0; /* Keeps image below the overlay */
+}
+
+.image-text {
+  position: absolute;
+  z-index: 2; 
+  font-size: 8rem;
+  text-align: start;
+  color: #ddd;
+  font-weight: 100;
+  width: 90%;
+}
+
+@media (max-width: 999px) {
+  .image-text{
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing-image {
+    margin-top: 90px;
+  }
+}

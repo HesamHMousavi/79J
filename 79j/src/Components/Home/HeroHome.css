@@ -1,0 +1,107 @@
+.bullion-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem; /* Ensures proper spacing */
+}
+
+/* Image Container */
+.bullion-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bullion-image {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text Container */
+.bullion-text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.small-heading {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-color-1);
+}
+
+.title-heading {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: 400;
+  color: #777;
+}
+
+.description-text {
+  max-width: 500px;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1.6;
+  color: #888;
+}
+
+/* 🔹 Tablets (Below 999px) */
+@media (max-width: 999px) {
+  .bullion-section {
+      flex-direction: column; /* Stacks text and image */
+      text-align: center;
+      gap: 1.5rem;
+  }
+
+  .bullion-text-container {
+      padding: 10px 20px;
+      max-width: 80%;
+  }
+
+  .title-heading {
+      font-size: 24px; /* Slightly smaller heading */
+  }
+
+  .description-text {
+      font-size: 15px;
+      max-width: 90%;
+  }
+}
+
+/* 🔸 Mobile (Below 768px) */
+@media (max-width: 768px) {
+  .bullion-text-container {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .bullion-image {
+      max-width: 250px;
+  }
+}
+
+/* 🔹 Extra Small Screens (Below 480px) */
+@media (max-width: 480px) {
+  .bullion-text-container {
+      padding: 5px;
+  }
+
+  .title-heading {
+      font-size: 22px;
+  }
+
+  .description-text {
+      font-size: 14px;
+      line-height: 1.4;
+  }
+
+  .bullion-image {
+      max-width: 200px;
+  }
+}

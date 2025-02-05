@@ -1,0 +1,13 @@
+:root{
+  --text-color-1:#baa468;
+  --gold-bg:#baa468;
+  --purple:#b239b2;
+  
+}
+
+*{
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

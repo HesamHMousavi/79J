@@ -1,0 +1,98 @@
+.other {
+    background-color: #eee;
+    padding: 4rem 2rem;
+}
+
+/* Flex container */
+.other-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* Individual items */
+.other .item-other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    min-height: 100%; /* Ensures the item expands if needed */
+    padding: 20px;
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+/* Item title */
+.other .item-other h3 {
+    font-size: 26px;
+    margin: 10px 0;
+    font-weight: 300;
+    color: #777;
+}
+
+/* Button */
+.other .item-other button {
+    border: none;
+    background-color: var(--gold-bg);
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s;
+    margin-top: 10px;
+}
+
+.other .item-other button:hover {
+    transform: scale(1.1);
+}
+
+/* Images */
+.other .item-other img {
+    width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
+}
+
+/* Section Title */
+.title-other {
+    margin: 4rem 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    color: #999;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets */
+@media (max-width: 900px) {
+    .other-flex {
+        gap: 2rem; /* Reduce spacing */
+    }
+    .title-other {
+        font-size: 40px; /* Adjust title size */
+    }
+}
+
+/* For mobile */
+@media (max-width: 600px) {
+    .other{
+        padding: 1rem 10px;
+    }
+    .other-flex {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .other .item-other {
+        padding: 0;
+        max-width: 100%; 
+    }
+    .title-other {
+        font-size: 35px;
+    }
+}

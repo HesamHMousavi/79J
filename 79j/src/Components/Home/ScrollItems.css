@@ -1,0 +1,103 @@
+.scrolling-container {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  flex-direction: column;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem; 
+}
+
+/* Hide scrollbar for all browsers */
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.bangle-card {
+  flex: 1;
+  min-width: 25%; 
+  max-width: 25%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.bangle-image {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover;
+}
+
+.bangle-name {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #555;
+  font-weight: 300;
+}
+
+.bangle-price {
+  font-size: 16px;
+  margin-top: 5px;
+  color: var(--gold-bg);
+  font-weight: 300;
+}
+
+.title-bangle {
+  text-align: center;
+  font-weight: 100 !important;
+  color: #aaa;
+  margin: 4rem 0;
+  font-weight: 200;
+  font-size: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* 🌍 Responsive Adjustments */
+
+/* 🔹 Tablets (2 items per row) */
+@media (max-width: 1024px) {
+  .bangle-card {
+      min-width: 50%;
+      max-width: 50%;
+  }
+}
+
+/* 🔸 Small Screens (1 item per row, full-width scrollable) */
+@media (max-width: 768px) {
+  .scrolling-wrapper {
+      flex-wrap: nowrap; /* Prevents items from stacking */
+      overflow-x: auto; /* Enables horizontal scrolling */
+  }
+
+  .bangle-card {
+      min-width: 80%; /* Slightly smaller than full width for better scrolling */
+      max-width: 80%;
+  }
+}
+
+/* 🔹 Extra Small Screens (Fully responsive) */
+@media (max-width: 480px) {
+  .bangle-card {
+      min-width: 100%;
+      max-width: 100%;
+  }
+}
