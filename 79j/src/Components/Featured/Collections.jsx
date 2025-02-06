@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../Imgs/wedding1.jpeg";
 import img2 from "../../Imgs/wedding2.jpeg";
 import img3 from "../../Imgs/wedding3.jpeg";
-import { useNavigate } from "react-router";
+import { Link } from "react-router";
 import "./Collections.css";
 
 const collections = [
@@ -30,7 +30,6 @@ const collections = [
 ];
 
 const Collections = () => {
-  const nav = useNavigate();
   return (
     <div className="featured-collections">
       <h2 className="title-1">Featured Collections</h2>
@@ -48,13 +47,9 @@ const Collections = () => {
             />
             <h3 className="collection-title">{item.title}</h3>
             <p className="collection-description">{item.description}</p>
-            <a
-              href={item.link}
-              className="collection-link"
-              onClick={() => nav(item.link)}
-            >
+            <Link to={item.link} className="collection-link">
               Explore →
-            </a>
+            </Link>
           </div>
         ))}
       </div>

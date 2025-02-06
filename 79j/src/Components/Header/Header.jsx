@@ -33,6 +33,22 @@ const Header = () => {
         <div className={`links ${menuOpen ? "active" : ""}`}>
           <div
             className={`link-item ${
+              location.pathname === "/" ? "selected" : ""
+            }`}
+            onClick={() => nav("/")}
+          >
+            <p>Home</p>
+          </div>
+          <div
+            className={`link-item ${
+              location.pathname === "/bangles" ? "selected" : ""
+            }`}
+            onClick={() => nav("/bangles")}
+          >
+            <p>Bangles</p>
+          </div>
+          <div
+            className={`link-item ${
               location.pathname === "/bracelets" ? "selected" : ""
             }`}
             onClick={() => nav("/bracelets")}
@@ -57,27 +73,11 @@ const Header = () => {
           </div>
           <div
             className={`link-item ${
-              location.pathname === "/bangles" ? "selected" : ""
-            }`}
-            onClick={() => nav("/bangles")}
-          >
-            <p>Bangles</p>
-          </div>
-          <div
-            className={`link-item ${
               location.pathname === "/featured" ? "selected" : ""
             }`}
             onClick={() => nav("/featured")}
           >
             <p>Featured</p>
-          </div>
-          <div
-            className={`link-item ${
-              location.pathname === "/" ? "selected" : ""
-            }`}
-            onClick={() => nav("/")}
-          >
-            <p>Home</p>
           </div>
         </div>
         <div className="img-con">
