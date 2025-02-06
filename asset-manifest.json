@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/79J/static/css/main.012bc226.css",
+    "main.css": "/79J/static/css/main.94071346.css",
     "main.js": "/79J/static/js/main.aae79704.js",
     "static/media/bar-main.jpg": "/79J/static/media/bar-main.5d135619233fc66c4ecc.jpg",
     "static/media/rings.jpg": "/79J/static/media/rings.f42444f246b923b11dd3.jpg",
@@ -22,11 +22,11 @@
     "static/media/store2.jpeg": "/79J/static/media/store2.72b1939f73dff1460f4b.jpeg",
     "static/media/gold-bar.jpg": "/79J/static/media/gold-bar.da1334de64f51451bbe6.jpg",
     "index.html": "/79J/index.html",
-    "main.012bc226.css.map": "/79J/static/css/main.012bc226.css.map",
+    "main.94071346.css.map": "/79J/static/css/main.94071346.css.map",
     "main.aae79704.js.map": "/79J/static/js/main.aae79704.js.map"
   },
   "entrypoints": [
-    "static/css/main.012bc226.css",
+    "static/css/main.94071346.css",
     "static/js/main.aae79704.js"
   ]
 }
