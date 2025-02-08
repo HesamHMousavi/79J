@@ -1,32 +1,37 @@
 {
   "files": {
-    "main.css": "/79J/static/css/main.15922e5a.css",
-    "main.js": "/79J/static/js/main.bbed9904.js",
-    "static/media/bar-main.jpg": "/79J/static/media/bar-main.5d135619233fc66c4ecc.jpg",
+    "main.css": "/79J/static/css/main.6f865722.css",
+    "main.js": "/79J/static/js/main.d6b92c90.js",
     "static/media/rings.jpg": "/79J/static/media/rings.f42444f246b923b11dd3.jpg",
     "static/media/landing.jpg": "/79J/static/media/landing.4800016d09aace333214.jpg",
     "static/media/bangal.png": "/79J/static/media/bangal.29e2bb8a9472c928ae58.png",
     "static/media/bra-long.png": "/79J/static/media/bra-long.d04421ec76f1d6bd6216.png",
-    "static/media/pic.jpg": "/79J/static/media/pic.0c0ff835d612c3c1ec08.jpg",
     "static/media/neck.jpg": "/79J/static/media/neck.ae333454071e0a0e8d2d.jpg",
     "static/media/necless-long.png": "/79J/static/media/necless-long.c4b5d7d78bd6205101b9.png",
     "static/media/ring-long.png": "/79J/static/media/ring-long.9e3a91ed0967887f8238.png",
     "static/media/wedding.jpg": "/79J/static/media/wedding.fb95cea1194e7635ad0b.jpg",
     "static/media/land.png": "/79J/static/media/land.7f6a0e3fa825cfd62081.png",
+    "static/media/scrollItem.jpeg": "/79J/static/media/scrollItem.35051ae8baf9de66fc9f.jpeg",
     "static/media/wedding3.jpeg": "/79J/static/media/wedding3.d6e6edc239a8e956a0d2.jpeg",
     "static/media/landing2.jpg": "/79J/static/media/landing2.4b30ec65d74fd99c8759.jpg",
+    "static/media/necklaceHome.jpeg": "/79J/static/media/necklaceHome.43f037501fdcc5120ada.jpeg",
+    "static/media/longOne.jpeg": "/79J/static/media/longOne.40f830f3b9088bb28fab.jpeg",
+    "static/media/braHome.jpeg": "/79J/static/media/braHome.0344e070e26ee3fea387.jpeg",
+    "static/media/ringsHome.jpeg": "/79J/static/media/ringsHome.0344e070e26ee3fea387.jpeg",
     "static/media/wedding4.jpeg": "/79J/static/media/wedding4.4e949aed41b747ae91b7.jpeg",
+    "static/media/bangelsHome.jpeg": "/79J/static/media/bangelsHome.1baa1829e376f36c3bf8.jpeg",
     "static/media/store3.jpeg": "/79J/static/media/store3.64363e56bb0db866b7e1.jpeg",
     "static/media/wedding2.jpeg": "/79J/static/media/wedding2.65e25b1ebf597c1b6a86.jpeg",
+    "static/media/scrollItem2.jpeg": "/79J/static/media/scrollItem2.800c9d5b759cef68d693.jpeg",
     "static/media/wedding1.jpeg": "/79J/static/media/wedding1.baf3bd4af0f84ecc85a7.jpeg",
-    "static/media/store2.jpeg": "/79J/static/media/store2.72b1939f73dff1460f4b.jpeg",
+    "static/media/79shop2.jpeg": "/79J/static/media/79shop2.409928884c95a1fb6871.jpeg",
     "static/media/gold-bar.jpg": "/79J/static/media/gold-bar.da1334de64f51451bbe6.jpg",
     "index.html": "/79J/index.html",
-    "main.15922e5a.css.map": "/79J/static/css/main.15922e5a.css.map",
-    "main.bbed9904.js.map": "/79J/static/js/main.bbed9904.js.map"
+    "main.6f865722.css.map": "/79J/static/css/main.6f865722.css.map",
+    "main.d6b92c90.js.map": "/79J/static/js/main.d6b92c90.js.map"
   },
   "entrypoints": [
-    "static/css/main.15922e5a.css",
-    "static/js/main.bbed9904.js"
+    "static/css/main.6f865722.css",
+    "static/js/main.d6b92c90.js"
   ]
 }
