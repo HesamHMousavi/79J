@@ -32,7 +32,7 @@ const collections = [
 const Collections = () => {
   return (
     <div className="featured-collections">
-      <h2 className="title-1">Featured Collections</h2>
+      <h2 className="title-1">Other Collections</h2>
       <div className="collections-grid">
         {collections.map((item, index) => (
           <div

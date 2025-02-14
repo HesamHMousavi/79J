@@ -1,49 +1,91 @@
+.landing-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 135px;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Grid Layout for Large Screens */
+@media (min-width: 1025px) {
+  .landing-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100vh; /* Ensures all images fit together */
+    gap: 0; /* Removes space between images */
+  }
+
+  .landing-image:nth-child(1) {
+    grid-row: 1 / span 2; /* Left side takes full height */
+  }
+
+  .landing-image:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .landing-image:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+/* Stack images on smaller screens */
+@media (max-width: 1024px) {
+  .landing-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Image Styling */
 .landing-image {
   position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 135px;
-  overflow: hidden;
 }
 
-.landing-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Ensure images fill their sections without space */
+.landing-image img {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)); 
-  z-index: 1; /* Ensures overlay is above the image */
-}
-
-.landing-image img {
-  max-height: 1000px;
-  width: 100%;
   object-fit: cover;
-  position: relative;
-  z-index: 0; /* Keeps image below the overlay */
 }
 
-.image-text {
+/* Image Text */
+.image-text-home-land {
   position: absolute;
-  z-index: 2; 
-  font-size: 8rem;
-  text-align: start;
-  color: #ddd;
-  font-weight: 100;
-  width: 90%;
+  z-index: 2;
+  font-size: 6rem;
+  max-width: 80%;
+  text-align: center;
+  color: white;
+  font-weight: 200;
 }
 
+/* Responsive Text */
+@media (max-width:1100px) {
+  .landing-image-container {
+    margin-top:107px;
+  }
+}
 @media (max-width: 999px) {
-  .image-text{
-    text-align: center;
+  .image-text-home-land {
     font-size: 3rem;
   }
 }
+
 @media (max-width: 768px) {
-  .landing-image {
-    margin-top: 90px;
+  .image-text-home-land {
+    font-size: 2.5rem;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./PremiumCollection.css";
-import img from "../../Imgs/store3.jpeg";
+import img from "../../Imgs/79shop2.jpeg";
 
 const PremiumCollection = () => {
   return (

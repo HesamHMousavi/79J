@@ -1,0 +1,71 @@
+.footer-text {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Heading */
+.footer-text h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #999;
+    font-weight: 500;
+}
+
+/* Responsive h1 */
+@media (max-width: 1024px) {
+    .footer-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-text h1 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Paragraph */
+.footer-text h3 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: #999;
+    font-weight: 350;
+}
+
+/* Responsive h3 */
+@media (max-width: 1024px) {
+    .footer-text h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-text h3 {
+        font-size: 1.4rem;
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text h3 {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}
+
+/* Utility Classes */
+.bold {
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+}

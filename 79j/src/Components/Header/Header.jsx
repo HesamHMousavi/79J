@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../Imgs/logo2.jpeg";
+import logo from "../../Imgs/logo.jpeg";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
 import "../core.css";
@@ -22,6 +22,11 @@ const Header = () => {
     };
   }, []);
 
+  const goToPage = (link) => {
+    nav(link);
+    setMenuOpen(false);
+  };
+
   return (
     <div className="header">
       <div className="max-width flex-between">
@@ -30,12 +35,12 @@ const Header = () => {
           <div></div>
           <div></div>
         </div>
-        <div className={`links ${menuOpen ? "active" : ""}`}>
+        <div className={`links `}>
           <div
             className={`link-item ${
               location.pathname === "/" ? "selected" : ""
             }`}
-            onClick={() => nav("/")}
+            onClick={() => goToPage("/")}
           >
             <p>Home</p>
           </div>
@@ -43,7 +48,7 @@ const Header = () => {
             className={`link-item ${
               location.pathname === "/bangles" ? "selected" : ""
             }`}
-            onClick={() => nav("/bangles")}
+            onClick={() => goToPage("/bangles")}
           >
             <p>Bangles</p>
           </div>
@@ -51,15 +56,20 @@ const Header = () => {
             className={`link-item ${
               location.pathname === "/bracelets" ? "selected" : ""
             }`}
-            onClick={() => nav("/bracelets")}
+            onClick={() => goToPage("/bracelets")}
           >
             <p>Bracelets</p>
           </div>
+        </div>
+        <div className="img-con">
+          <img src={logo} alt="Logo" onClick={() => goToPage("/")} />
+        </div>
+        <div className={`links`}>
           <div
             className={`link-item ${
               location.pathname === "/necklaces" ? "selected" : ""
             }`}
-            onClick={() => nav("/necklaces")}
+            onClick={() => goToPage("/necklaces")}
           >
             <p>Necklaces</p>
           </div>
@@ -67,7 +77,7 @@ const Header = () => {
             className={`link-item ${
               location.pathname === "/rings" ? "selected" : ""
             }`}
-            onClick={() => nav("/rings")}
+            onClick={() => goToPage("/rings")}
           >
             <p>Rings</p>
           </div>
@@ -77,11 +87,59 @@ const Header = () => {
             }`}
             onClick={() => nav("/featured")}
           >
-            <p>Featured</p>
+            <p>Diamonds & Bridals</p>
           </div>
         </div>
-        <div className="img-con">
-          <img src={logo} alt="Logo" />
+
+        <div className={`${menuOpen ? " links active" : "display-none"}`}>
+          <div
+            className={`link-item ${
+              location.pathname === "/" ? "selected" : ""
+            }`}
+            onClick={() => goToPage("/")}
+          >
+            <p>Home</p>
+          </div>
+          <div
+            className={`link-item ${
+              location.pathname === "/bangles" ? "selected" : ""
+            }`}
+            onClick={() => goToPage("/bangles")}
+          >
+            <p>Bangles</p>
+          </div>
+          <div
+            className={`link-item ${
+              location.pathname === "/bracelets" ? "selected" : ""
+            }`}
+            onClick={() => goToPage("/bracelets")}
+          >
+            <p>Bracelets</p>
+          </div>
+          <div
+            className={`link-item ${
+              location.pathname === "/necklaces" ? "selected" : ""
+            }`}
+            onClick={() => goToPage("/necklaces")}
+          >
+            <p>Necklaces</p>
+          </div>
+          <div
+            className={`link-item ${
+              location.pathname === "/rings" ? "selected" : ""
+            }`}
+            onClick={() => goToPage("/rings")}
+          >
+            <p>Rings</p>
+          </div>
+          <div
+            className={`link-item ${
+              location.pathname === "/featured" ? "selected" : ""
+            }`}
+            onClick={() => goToPage("/featured")}
+          >
+            <p>Diamonds & Bridals</p>
+          </div>
         </div>
       </div>
     </div>

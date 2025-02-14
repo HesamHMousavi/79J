@@ -1,7 +1,7 @@
 import React from "react";
-import Img1 from "../../Imgs/bra-long.png";
-import Img2 from "../../Imgs/ring-long.png";
-import Img3 from "../../Imgs/necless-long.png";
+import Img1 from "../../Imgs/braHome.jpeg";
+import Img2 from "../../Imgs/bangelsHome.jpeg";
+import Img3 from "../../Imgs/necklaceHome.jpeg";
 import { useNavigate } from "react-router";
 import "./Other.css";
 

@@ -1,11 +1,11 @@
 import React from "react";
-import Img1 from "../../Imgs/bangal.png";
-import Img2 from "../../Imgs/bra-long.png";
-import Img3 from "../../Imgs/neck.jpg";
-import Img4 from "../../Imgs/rings.jpg";
-import Img5 from "../../Imgs/land.png";
-import Img6 from "../../Imgs/landing.jpg";
-import Img7 from "../../Imgs/landing2.jpg";
+import Img1 from "../../Imgs/braHome.jpeg";
+import Img2 from "../../Imgs/scrollItem.jpeg";
+import Img3 from "../../Imgs/scrollItem2.jpeg";
+import Img4 from "../../Imgs/ringsHome.jpeg";
+import Img5 from "../../Imgs/bangelsHome.jpeg";
+import Img6 from "../../Imgs/necklaceHome.jpeg";
+import Img7 from "../../Imgs/braHome.jpeg";
 import Img8 from "../../Imgs/logo.jpeg";
 
 const Grid = ({ imgArray }) => {
@@ -36,13 +36,16 @@ const Grid = ({ imgArray }) => {
     { name: "item8", img: Img8 },
   ];
   return (
-    <div className="grid max-width">
-      {data.map((item, idx) => (
-        <div className="grid-item" key={idx}>
-          <img src={item.img} alt="" />
-          <h3>{item.name}</h3>
-        </div>
-      ))}
+    <div className="max-width">
+      <div className="grid">
+        {data.map((item, idx) => (
+          <div className="grid-item" key={idx}>
+            <img src={item.img} alt="" />
+            <h3>{item.name}</h3>
+            <button className="btn">Contact us</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

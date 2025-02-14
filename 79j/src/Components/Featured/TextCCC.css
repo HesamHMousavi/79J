@@ -1,0 +1,84 @@
+.text-section-c {
+    padding: 5rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.text-section-c h1, .text-section-c h4 {
+    text-align: center;
+}
+
+.text-section-c h1 {
+    color: #999;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/* Responsive Headings */
+@media (max-width: 1024px) {
+    .text-section-c h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section-c h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section-c h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Section Margin */
+.sec-mg {
+    margin: 20px auto !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+
+/* Paragraph Styling */
+.text-section-c h4 {
+    font-weight: 400;
+    max-width: 80%;
+    color: #999;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+/* Responsive Paragraph */
+@media (max-width: 1024px) {
+    .text-section-c h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section-c {
+        padding: 3rem;
+    }
+
+    .text-section-c h4 {
+        font-size: 1.4rem;
+        max-width: 85%;
+    }
+    .sec-mg {
+        font-size: 1.3rem !important;
+        font-weight: 500 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section-c {
+        padding: 1rem;
+    }
+
+    .text-section-c h4 {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}

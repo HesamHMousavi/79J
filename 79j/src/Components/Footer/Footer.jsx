@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaSnapchatGhost } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
+import { Link } from "react-router";
 import "./Footer.css";
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>241 Legrams Ln, Bradford BD7 2EJ</p>
-          <p>Email: Enquiries@79jewellers.com</p>
+          <p>Email: enquiries@79jewellers.com</p>
           <p>Phone: +44 7833 960991</p>
         </div>
 
@@ -48,19 +49,19 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/featured">Featured</a>
+              <Link to="/featured">Featured</Link>
             </li>
             <li>
-              <a href="/necklaces">Necklaces</a>
+              <Link to="/necklaces">Necklaces</Link>
             </li>
             <li>
-              <a href="/bracelets">Bracelets</a>
+              <Link to="/bracelets">Bracelets</Link>
             </li>
             <li>
-              <a href="/rings">Rings</a>
+              <Link to="/rings">Rings</Link>
             </li>
           </ul>
         </div>

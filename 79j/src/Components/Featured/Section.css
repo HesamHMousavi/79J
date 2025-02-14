@@ -1,0 +1,96 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.section h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.section h4 {
+    margin: 2rem auto 0;
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 60%;
+}
+
+.section h2, .section h4 {
+    text-align: center;
+    color: #999;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 2.5rem;
+    }
+    
+    .section h4 {
+        font-size: 1.5rem;
+        max-width: 80%;
+    }
+}
+
+/* Image Container */
+.section .img-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+/* Responsive Images */
+.section .img-con img {
+    max-height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+/* Adjust Images for Mobile */
+@media (max-width: 1024px) {
+    .section .img-con {
+        gap: 1.5rem;
+    }
+
+    .section .img-con img {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 1.5rem;
+    }
+
+    .section .img-con {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section .img-con img {
+        max-height: 300px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section h4 {
+        font-size: 1.25rem;
+        max-width: 90%;
+    }
+
+    .section .img-con img {
+        max-height: 250px;
+        width: 100%;
+    }
+}
