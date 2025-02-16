@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f903e9b1.css",
-    "main.js": "/static/js/main.b74b59f8.js",
+    "main.js": "/static/js/main.d512b3e6.js",
     "static/media/bra-long.png": "/static/media/bra-long.d04421ec76f1d6bd6216.png",
     "static/media/necless-long.png": "/static/media/necless-long.c4b5d7d78bd6205101b9.png",
     "static/media/ring-long.png": "/static/media/ring-long.9e3a91ed0967887f8238.png",
@@ -23,10 +23,10 @@
     "static/media/gold-bar.jpg": "/static/media/gold-bar.da1334de64f51451bbe6.jpg",
     "index.html": "/index.html",
     "main.f903e9b1.css.map": "/static/css/main.f903e9b1.css.map",
-    "main.b74b59f8.js.map": "/static/js/main.b74b59f8.js.map"
+    "main.d512b3e6.js.map": "/static/js/main.d512b3e6.js.map"
   },
   "entrypoints": [
     "static/css/main.f903e9b1.css",
-    "static/js/main.b74b59f8.js"
+    "static/js/main.d512b3e6.js"
   ]
 }
