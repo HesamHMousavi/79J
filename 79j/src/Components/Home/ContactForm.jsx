@@ -18,7 +18,7 @@ const ContactForm = () => {
       <h2 className="contact-title">Get in Touch</h2>
       <form
         className="contact-form"
-        action="https://formsubmit.co/enquiries@79jewellers.com" // Replace with your actual email
+        action="https://formsubmit.co/79jewellers@gmail.com" // Replace with your actual email
         method="POST"
       >
         {/* Hidden Input to Disable Captcha */}

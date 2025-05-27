@@ -7,6 +7,7 @@ import RingsLong from "./Imgs/ring-long.png";
 import NeckLong from "./Imgs/longOne.jpeg";
 import BraLong from "./Imgs/bra-long.png";
 import { IoLogoWhatsapp } from "react-icons/io";
+import PaymentRequired from "./Components/Other/PaymentFailed";
 import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/featured" element={<Featured />} />
+        <Route path="/" element={<PaymentRequired />} />
+        {/* <Route path="/featured" element={<Featured />} />
         <Route
           path="/rings"
           element={<ItemsPage title="Rings" Img={RingsLong} />}
@@ -31,17 +32,17 @@ function App() {
         <Route
           path="/bangles"
           element={<ItemsPage title="Bangles" Img={BraLong} />}
-        />
+        /> */}
       </Routes>
-      <div className="whats-app">
+      {/* <div className="whats-app">
         <a
-          href="https://api.whatsapp.com/send?phone=447833960991&text=Hey!%20Check%20out%20this%20image:%20http://localhost:3000/79J/static/media/necklaceHome.43f037501fdcc5120ada.jpeg"
+          href="https://api.whatsapp.com/send?phone=447833960991"
           target="_blank"
           rel="noreferrer"
         >
           <IoLogoWhatsapp size={70} className="whats-app-icon" />
         </a>
-      </div>
+      </div> */}
     </Router>
   );
 }

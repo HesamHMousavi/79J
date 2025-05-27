@@ -40,8 +40,9 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>241 Legrams Ln, Bradford BD7 2EJ</p>
-          <p>Email: enquiries@79jewellers.com</p>
+          <p>Email: 79jewllers@gmail.com</p>
           <p>Phone: +44 7833 960991</p>
+          <p>Phone: 01274 057 221</p>
         </div>
 
         {/* Quick Links */}

@@ -8,8 +8,8 @@ const Rings = () => {
       <div className="rings">
         <h1>Create your perfect piece</h1>
         <h3 className="mg-b no-it">
-          Whatsapp us on <span className="bold">07833 960 991</span> for a
-          consultation!
+          Whatsapp us on <span className="bold">07833 960 991</span> or call{" "}
+          <strong>01274 057 221</strong> for a consultation!
         </h3>
         <h3>
           At 79 Jewellers, we specialise in crafting custom diamond jewellery

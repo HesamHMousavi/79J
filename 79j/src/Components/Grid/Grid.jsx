@@ -8,41 +8,45 @@ import Img6 from "../../Imgs/necklaceHome.jpeg";
 import Img7 from "../../Imgs/braHome.jpeg";
 import Img8 from "../../Imgs/logo.jpeg";
 
-const Grid = ({ imgArray }) => {
+const Grid = () => {
   const data = [
-    { name: "Item1", img: Img1 },
-    { name: "Item2", img: Img2 },
-    { name: "item3", img: Img3 },
-    { name: "item4", img: Img4 },
-    { name: "item5", img: Img5 },
-    { name: "item6", img: Img6 },
-    { name: "item7", img: Img7 },
-    { name: "item8", img: Img8 },
-    { name: "Item1", img: Img1 },
-    { name: "Item2", img: Img2 },
-    { name: "item3", img: Img3 },
-    { name: "item4", img: Img4 },
-    { name: "item5", img: Img5 },
-    { name: "item6", img: Img6 },
-    { name: "item7", img: Img7 },
-    { name: "item8", img: Img8 },
-    { name: "Item1", img: Img1 },
-    { name: "Item2", img: Img2 },
-    { name: "item3", img: Img3 },
-    { name: "item4", img: Img4 },
-    { name: "item5", img: Img5 },
-    { name: "item6", img: Img6 },
-    { name: "item7", img: Img7 },
-    { name: "item8", img: Img8 },
+    { name: "Cuff Bracelet", img: Img1 },
+    { name: "Gold Necklace", img: Img2 },
+    { name: "Cuban Link Chain", img: Img3 },
+    { name: "Danglers", img: Img4 },
+    { name: "Tennis Bracelet", img: Img5 },
+    { name: "Gold Band", img: Img6 },
+    { name: "Cocktail Ring", img: Img7 },
+    { name: "79 Special", img: Img8 },
   ];
+
+  const handleClick = (imgSrc) => {
+    // Convert the image import path into a full URL
+    const fullImageUrl = `${window.location.origin}${imgSrc}`;
+    // const secureImageUrl = fullImageUrl.replace(/^http:/, "https:");
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=447833960991&text=${encodeURIComponent(
+      fullImageUrl
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="max-width">
       <div className="grid">
         {data.map((item, idx) => (
           <div className="grid-item" key={idx}>
-            <img src={item.img} alt="" />
+            <img
+              src={item.img}
+              alt={item.name}
+              onClick={() => handleClick(item.img)}
+              style={{ cursor: "pointer" }}
+            />
             <h3>{item.name}</h3>
-            <button className="btn">Contact us</button>
+            <button className="btn" onClick={() => handleClick(item.img)}>
+              Contact us
+            </button>
           </div>
         ))}
       </div>

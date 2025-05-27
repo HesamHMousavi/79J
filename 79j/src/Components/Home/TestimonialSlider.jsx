@@ -4,18 +4,18 @@ import "./TestimonialSlider.css";
 const testimonials = [
   {
     text: "Stunning designs in all jewellery pieces. Haven't seen gold jewellery like this anywhere else. Service was fantastic, very happy with my bracelet. Will be visiting again.",
-    author: "RAV 91",
+    author: "Bushra Khan",
     stars: 5,
   },
   {
     text: "Excellent quality and customer service. The craftsmanship of the jewellery is outstanding. Highly recommend!",
-    author: "LISA K.",
-    stars: 4,
+    author: "Alisha Ali",
+    stars: 5,
   },
   {
     text: "A wonderful experience shopping here. The designs are unique, and the staff is very knowledgeable and helpful.",
-    author: "MOHAMMED A.",
-    stars: 3,
+    author: "Mohammed Islam.",
+    stars: 5,
   },
 ];
 
